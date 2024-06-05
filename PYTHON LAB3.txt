@@ -1,0 +1,157 @@
+#1. Python program to check leap year
+
+#take input from user
+year=int(input("Enter a Year:"))
+#defining the function is_leap_year
+def is_leap_year(year):
+    #if the year is leap it will write true else it will write false
+    if year%4==0:
+        if year%100==0:
+            if year%400==0:
+                return True
+            else:
+                return False
+        else:
+            return True
+    else:
+        return False
+#by the given input it will check it is leap year or not using function
+if is_leap_year(year):
+#printing the statement
+    print("is a leap year",year)
+else:
+    print("is not a leap year",year)
+
+
+OUTPUT:
+
+Enter a Year:2024
+is a leap year 2024
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#2. Python Program to Find the Largest Among Three Numbers
+
+# defining the function find_largest    
+def find_largest(num1, num2, num3):
+    if num1 >= num2 and num1 >= num3:
+        largest = num1
+    elif num2 >= num1 and num2 >= num3:
+        largest = num2
+    else:
+        largest = num3
+    return largest
+#taking user inputs
+num1=int(input("Enter the First number:"))
+num2=int(input("Enter the Second number:"))
+num3=int(input("Enter the third number:"))
+#finding the largest number using function
+largest=find_largest(num1,num2,num3)
+#printing the largest number amoung three numbers
+print("the largest of three numbers:",largest)
+
+
+OUTPUT:
+
+Enter the First number:45
+Enter the Second number:25
+Enter the third number:76
+the largest of three numbers: 76
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3. Python Program to Check if a Number is Positive, Negative or 0
+
+
+# definig the function check_number
+def check_number(num):
+    if num > 0:
+#The statement will print if it is positive number
+        print("The number is positive.")
+    elif num < 0:
+#the statement will print if it is negative number        
+        print("The number is negative.")
+    else:
+#The statement will print if it is Zero         
+        print("The number is zero.")
+#Taking inputs from the user        
+num = float(input("Enter a number: "))
+check_number(num)
+
+
+
+OUTPUT:
+
+Enter a number: 34
+The number is positive.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#4.  A toy vendor supplies three types of toys: Battery Based Toys, Key-based Toys, and Electrical Charging Based Toys. 
+The vendor gives a discount of 10% on orders for battery-based toys if the order is for more than Rs. 1000. On orders 
+of more than Rs. 100 for key-based toys, a discount of 5% is given, and a discount of 10% is given on orders for electrical
+ charging based toys of value more than Rs. 500. Assume that the numeric codes 1,2 and 3 are used for battery based toys,
+ key-based toys, and electrical charging based toys respectively. Write a program that reads the product code and the
+ order amount and prints out the net amount that the customer is required to pay after the discount.
+
+
+
+#defining the function calculate discount
+def calculate_discount(product_code, order_amount):
+    discount = 0
+#checking condition according to the purchases    
+    if product_code == 1 and order_amount > 1000:
+        discount = 0.10
+    elif product_code == 2 and order_amount > 100:
+        discount = 0.05
+    elif product_code == 3 and order_amount > 500:
+        discount = 0.10
+    net_amount = order_amount - (order_amount * discount)
+    return net_amount
+#taking input of product_code
+product_code = int(input("Enter the product code (1 for Battery Based Toys, 2 for Key-based Toys, 3 for Electrical Charging Based Toys): "))
+#taking input for order_amount
+order_amount = float(input("Enter the order amount in Rs.: "))
+#calculating the net_amount from the given information
+net_amount = calculate_discount(product_code, order_amount)
+#printing the net_amount after discount
+print("Net amount after discount: Rs.", net_amount)
+
+
+OUTPUT:
+
+Enter the product code (1 for Battery Based Toys, 2 for Key-based Toys, 3 for Electrical Charging Based Toys): 2
+Enter the order amount in Rs.: 2400
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#5.   A transport company charges the fare according to following table: Distance Charges 1-50 8 Rs./Km 51-100 10 Rs./Km > 100 12 Rs/Km
+
+
+
+#defining calculator fare
+def calculate_fare(distance):
+#checking condition 
+    if distance <= 50:
+        fare = distance * 8
+    elif distance <= 100:
+        fare = 50 * 8 + (distance - 50) * 10
+    else:
+        fare = 50 * 8 + 50 * 10 + (distance - 100) * 12
+    return fare
+#taking input from the user for distance
+distance = float(input("Enter the distance in kilometers: "))
+#calculating fare
+fare = calculate_fare(distance)
+#printing the fare for given distance
+print("The fare for the given distance is Rs.", fare)
+
+
+
+OUTPUT:
+
+Enter the distance in kilometers: 74
+The fare for the given distance is Rs. 640.0
+

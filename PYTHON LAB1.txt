@@ -1,0 +1,62 @@
+#1.calculate the multiplication and sum of two numbers
+
+#assigning valuse to a variable
+a=2
+b=5
+#adding two values
+result_add=a+b
+#multiplying two values
+result_mul=a*b
+#printing the Statement
+print("The Sum of two numbers:",result_add)
+#printing the statement
+print("multiplication of a and b is:",result_mul)
+
+OUTPUT:
+The Sum of two numbers: 7
+multiplication of a and b is: 10
+
+-------------------------------------------------------------------------------------------------
+
+#2.Declare Two variable and print that which variable is largest using ternary operators
+
+#declaring two variables
+a=20
+b=25
+#Using ternary operator for finding largest variable
+result=(True if a<b else False)
+#printing the result
+print(result)
+
+OUTPUT:
+True
+-------------------------------------------------------------------------------------------------
+
+#3.python program to convert the temperature in degree centigrate to Fahrenheit
+
+#assign centigrate value
+c=20
+#converting centigrate to fahrenheit
+f=c*9/5+32
+print(f)
+
+OUTPUT:
+68.0
+-------------------------------------------------------------------------------------------------
+
+#4.python program to find the area of triangle whos sides are given
+
+#assign values to a variable
+a=5
+b=8
+c=9
+#calculating semiperimeter 
+s=(a+b+c)/2
+#calculating area of triangle
+area=s*(s-a)*(s-b)*(s-c)
+#printing area of triangle
+print("The area of Triangle is:",area)
+
+
+OUTPUT:
+The area of Triangle is: 396.0

@@ -1,0 +1,118 @@
+1. Write a Python program to count the occurrences of each word in a given sentence.
+string = “To change the overall look of your document. To change the look available in the gallery” 
+
+
+#by using split function we are breaking sentences into words
+words = "To change the overall look of your document. To change the look available in the gallery".split()  
+#creating empty dictionary
+word_count = {}
+#using for loop counting the occurence of each word
+for word in words:
+#if if word is present already then it will increment
+    if word in word_count:				
+        word_count[word] += 1
+    else:													
+        word_count[word] = 1
+print("The occurrences of each word in a given sentence are:")						    
+for word, count in word_count.items():									
+    print(word,count)
+
+
+OUTPUT:
+
+
+The occurrences of each word in a given sentence are:
+To 2
+change 2
+the 3
+overall 1
+look 2
+of 1
+your 1
+document. 1
+available 1
+in 1
+gallery 1
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#2. Write a Python program to remove a newline in Python 
+String = "\nBest \nDeeptech \nPython \nTraining\n" 
+
+#taking string
+string = "\nBest \nDeeptech \nPython \nTraining\n"
+#by using replace fuction replacing a string with atleast two charecters
+string_replace = string.replace("\n", "")
+#printing the outputs with newline
+print("String with new line:", string)				
+print("String without newline:", string_replace)	
+
+
+OUTPUT:
+
+
+String with new line: 
+Best 
+Deeptech 
+Python 
+Training
+
+String without newline: Best Deeptech Python Training
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#3. Write a Python program to reverse words in a string 
+String = “Deeptech Python Training” 
+
+#by using split function breaking the sentences into words
+str= "Deeptech Python Training ".split()
+#printing the str
+print("Before Reversing:", str)
+#slicing the string
+word = str[::-1]
+#combining reversed words
+str_reverse = " ".join(word)
+#printing the output
+print("After Reversing:", str_reverse)	
+
+
+OUTPUT:
+
+
+Before Reversing: ['Deeptech', 'Python', 'Training']
+After Reversing: Training Python Deeptech
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------				        
+#4. Write a Python program to count and display the vowels of a given text String=”Welcome to python Training
+
+#taking string
+string = "Welcome to Python Training"
+#printing the string
+print("The given string is:", string)
+#Converting the given string into lower case
+string = string.lower()
+#giving vowel
+vowel_counts = {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
+#by using for loop checking all the words into strings
+for char in string:
+#by using if condition checking whether it is vowel or not
+    if char in vowel_counts:					
+        vowel_counts[char] += 1
+#printing the vowel_counts
+print("Vowel counts:")															
+for vowel, count in vowel_counts.items():
+    print(vowel,count)
+
+
+OUTPUT:
+
+
+The given string is: Welcome to Python Training
+Vowel counts:
+a 1
+e 2
+i 2
+o 3
+u 0
+
+

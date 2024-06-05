@@ -1,0 +1,85 @@
+1. Write a Python program to find the number of times 4 appears in the tuple. 
+Input: tuplex = (2, 4, 5, 6, 2, 3, 4, 4, 7 ) 
+Output: 3 
+
+#given tuple
+tuple1 = (2, 4, 5, 6, 2, 3, 4, 4, 7)
+#by using count() we are finding the number of appearence of 4
+count = tuple1.count(4)
+#printing the statement
+print("Number of times 4 appeared in the tuple:", count)  
+
+OUTPUT:
+Number of times 4 appeared in the tuple: 3
+
+-------------------------------------------------------------------------------------------------------------------------------------------      
+2.Write a Python program to convert a list to a tuple. 
+Input: listx = [5, 10, 7, 4, 15, 3] 
+Output: (5, 10, 7, 4, 15, 3) 
+
+#given list
+list1 = [5, 10, 7, 4, 15, 3]
+#by using tuple() converting list into tuple
+new_tuple=tuple(list1)
+#printing
+print("Tuple:",new_tuple)                                      
+
+OUTPUT:
+
+Tuple: (5, 10, 7, 4, 15, 3)
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+3. Write a Python program to calculate the sum of the numbers in a given tuple. 
+Input: tuples_list = [(1, 2), (3, 4), (5, 6)]
+
+#given input
+list1 = [(1, 2), (3, 4), (5, 6)]                        
+#assigning sum as 0
+sum = 0
+#for to traverse the elements inside the list
+for i in list1:                                             
+    for num in i:                                       
+        sum += num
+#printing
+print("Sum of numbers in the tuple:", sum)         
+
+OUTPUT:
+
+Sum of numbers in the tuple: 21
+
+-------------------------------------------------------------------------------------------------------------------------------------------         
+4.Write a python program and iterate the given tuples
+Input: 
+employee1 = ("John Doe", 101, "Human Resources", 60000) 
+employee2 = ("Alice Smith", 102, "Marketing", 55000) 
+employee3 = ("Bob Johnson", 103, "Engineering", 75000)
+
+#giving inputs
+employee1 = ("John Doe", 101, "Human Resources", 60000)            
+employee2 = ("Alice Smith", 102, "Marketing", 55000)
+employee3 = ("Bob Johnson", 103, "Engineering", 75000)
+emp = [employee1, employee2, employee3]                           
+for employee in emp:                                               
+    for info in employee:
+#printing the statements
+        print(info," ")                                           
+    print("\n")
+
+OUTPUT:
+
+John Doe  
+101  
+Human Resources  
+60000  
+
+Alice Smith  
+102  
+Marketing  
+55000  
+
+Bob Johnson  
+103  
+Engineering  
+75000  
+
+

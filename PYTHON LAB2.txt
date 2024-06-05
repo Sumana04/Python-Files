@@ -1,0 +1,109 @@
+#1. Using input() function take one number from the user and using ternary operators check whether the number is even or odd
+
+
+#taking input from user
+number=int(input("Enter a number:"))
+#checking the entered number is odd or even using ternary operator
+result="Even" if number%2==0 else"odd"
+#printing the result
+print("entered number is:",result)
+
+
+
+OUTPUT:
+
+Enter a number:5
+entered number is: odd
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#2. Using input function take two number and then swap the number
+
+
+#taking inputs from the user
+num1=int(input("Enter the First number:"))
+num2=int(input("Enter the Second number:"))
+#by using parallel assignment we are swapping two numbers
+num1,num2=num2,num1
+#printing the Swapped numbers
+print(num1)
+print(num2)
+
+
+OUTPUT:
+
+Enter the First number:7
+Enter the Second number:8
+8
+7
+
+
+#or
+
+#taking inputs from the user
+num1=int(input("Enter the First number:"))
+num2=int(input("Enter the Second number:"))
+#creating one temporary variable
+temp=num1
+#assigning values for that
+num1=num2
+num2=temp
+#printing the Swapped numbers
+print("After Swapping :num1=",num1,"num2=",num2)
+
+
+OUTPUT:
+
+Enter the First number:9
+Enter the Second number:8
+After Swapping :num1= 8 num2= 9
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#3. Write a Program to Convert Kilometers to Miles
+
+#First we are taking conversion_factor
+conversion_factor = 0.621371
+
+# taking input from the user
+kilometers = float(input("Enter distance in kilometers: "))
+
+# Converting kilometers to miles from the formula
+miles = kilometers * conversion_factor
+
+# printing the kilometer to miles coversion value
+print("after conversion:",miles)
+
+
+OUTPUT:
+
+Enter distance in kilometers: 6
+after conversion: 3.7282260000000003
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+# 4. Find the Simple Interest on Rs. 200 for 5 years at 5% per year.
+
+#First entering the principle amount, interest percentage , and years
+principal = 200
+interest = 5  
+years= 5
+
+# Converting interest from percentage to decimal
+interest_decimal = interest / 100
+
+# Calculating the simple interest
+simple_interest = (principal * interest_decimal * years) / 100
+
+#printing the simple interest
+print("Simple Interest:", simple_interest)
+
+
+OUTPUT:
+
+Simple Interest: 0.5
+
